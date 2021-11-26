@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typescript</title>
+</head>
+<body>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+  <!--  <script src="namespaces/geometriaCirc.js"></script>
+    <script src="namespaces/geometriaRetang.js"></script>
+    <script src="namespaces/namespaces.js"></script>
+     <script src="modulos/modulos.js"></script>
+    <script src="interfaces/interfaces.js"></script>
+ -->
+    <script src="classes/classes.js"></script>
+    <script src="genericos/genericos.js"></script>
+    <script src="decorators/decorators.js"></script>
+    <script>
+        SystemJs.config({
+            baseUrl: '/modulos',
+            packages: {
+                '/modulos': {
+                    defaultJSExtension: true
+                }
+            }
+        })
+        SystemJs.import('./modulos/modulos.js')
+    </script>
+</body>
+</html>

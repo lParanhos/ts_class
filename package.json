@@ -1,0 +1,14 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "@types/node": "^13.7.0",
+    "live-server": "^1.2.1",
+    "systemjs": "0.21.6"
+  }
+}
